@@ -1,0 +1,499 @@
+/* =============================================
+                Mobile Menu
+============================================= */
+.navbar-header {
+    position: relative;
+}
+
+/* Open Button */
+#mobile-nav-open-btn {
+    font-size: 30px;
+    color: #f4c613;
+    cursor: pointer;
+    z-index:2;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    /* Hide Mobile Nav Open Btn */
+    display:none;
+}
+
+/* Menu Div*/
+#mobile-nav {
+    /* By Defualt, Mobile Nav will be hidden with height 0% */
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left:0;
+    /*ShowMenu*/z-index: 3;
+    background-color: rgba(255, 255, 255, .9);
+    transition:all 300ms linear;
+    -webkit-transition:all 300ms linear;
+    -moz-transition:all 300ms linear;
+    -ms-transition:all 300ms linear;
+    -o-transition:all 300ms linear;
+    overflow-y: hidden;
+}
+
+/* Close Button */
+#mobile-nav-close-btn {
+    font-family: "Raleway", sans-serif;
+    font-size: 70px;
+    color: #212226;
+    font-weight: 400;
+    cursor: pointer;
+    position: absolute;
+    top: -9px;
+    right: 13px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+/* Menu Content */
+#mobile-nav-content {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    top: 10%;
+}
+
+#mobile-nav ul li {
+    margin-bottom:20px;
+}
+
+/* Link */
+#mobile-nav a {
+    font-family: "Raleway", sans-serif;
+    color: #212226;
+    font-weight: 400;
+    text-transform: uppercase;
+    /* Text Will Not Take Full Width */
+    display: inline;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+/* Hover State */
+#mobile-nav a:hover,
+#mobile-nav a:focus,
+#mobile-nav-close-btn:hover,
+#mobile-nav-close-btn:focus {
+    color: #f4c613;
+    /* Remove Grey Background */
+    background: none;
+}
+
+/*Mobile Nav Scroll Spy Active State */
+.white-nav-top #mobile-nav ul.nav>li.active>a {
+    color: #f4c613;
+    font-weight: 500;
+}
+
+/*================================================
+            Bootstrap 3 Media Queries
+================================================*/
+
+/* Large Devices (Desktops & Laptops) */
+@media (min-width: 1200px)and (max-width:1299px) {
+    /* Navigation */
+    .site-nav-wrapper {
+           padding: 0 20px;
+    }
+} 
+
+/* Medium Devices (Landscape Tablets & Medium Desktops) */
+@media (min-width: 992px) and (max-width:1199px) {
+
+    /* Navigation */
+    .site-nav-wrapper {
+        padding: 0;
+    }
+    /* Generic */
+    .vertical-heading h2{
+        font-size: 29px;
+    } 
+
+    /* Services 02 */
+    #services-tabs .tab-bg {
+        padding: 37px 30px;
+        min-height: 300px;
+    }
+
+    .service-tab p {
+        line-height: 20px;
+    }
+
+
+}
+
+/* Small Devices (Portait Tablets & Small Desktops) */
+@media (min-width: 768px) and (max-width:991px) {
+
+    /* Navigation */
+    .site-nav-wrapper {
+        padding: 0;
+    }
+    /* Home */
+    #home-heading h1{
+        font-size: 41px;
+    }
+    #home-text p {
+        font-size: 13px;
+    }
+    /* Reduce Button */
+    .btn-general {
+        padding: 8px 35px 8px 35px;
+        font-size: 10px;
+    }
+    .vertical-heading h2{
+        font-size: 29px;
+    } 
+    /* Tech Statement */
+    #tech-statement {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    /* Services 02 */
+    .r-tabs-accordion-title{
+        text-align: center;
+        margin-bottom: 10px;
+
+    }
+    .r-tabs-accordion-title a {
+        font-family: "Raleway",sans-serif;
+        font-size: 13px;
+        color: #212226;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0;
+        /* Remove Underline */
+        text-decoration: none;
+    }
+    /* Tab Active State */
+    .r-tabs-accordion-title.r-tabs-state-active a{
+        color:#f4c613;
+        font-weight: 700;
+        border-bottom: 3px solid #f4c613;
+        padding-bottom: 5px;
+        transition: border-color 300ms linear;
+        -webkit-transition: border-color 300ms linear;
+        -moz-transition: border-color 300ms linear;
+        -ms-transition: border-color 300ms linear;
+        -o-transition: border-color 300ms linear;
+    }
+
+    /* Pricing Number */
+    .pricing-table .price h2 {
+        margin: 0 0 0 6px;
+        font-size: 35px;
+    }
+
+    /* Stats */
+    .stats-item p {
+        line-height: 18px;
+    }
+
+    /* Blogs Section */
+    .blog-post .post-meta p {
+        line-height: 14px;
+    }
+
+    /* Contact Section */
+    ul.office-details li i {
+        width: 25px;
+    }
+    ul.office-details li{
+    margin-right: 15px;
+    }
+}
+
+
+/* Extra Small Devices (Landscape Phone & Portrait Tablets) */
+@media (max-width: 767px)  {
+    /* Navigation */
+    .navbar {
+        padding: 20px 0;
+    }
+
+    .site-nav-wrapper, .white-nav-top {
+        padding: 0;
+    }
+    /* Show Mobile Nav Open Btn */
+    #mobile-nav-open-btn{
+        display: block;
+    }
+    /* Home */
+    #home-heading h1{
+        font-size: 22px;
+    }
+    #home-text p {
+        font-size: 13px;
+        line-height: 18px;
+        margin: 8px 2px 30px 2px;
+    }
+    /* Reduce Button */
+    .btn-general {
+        padding: 8px 25px 6px 25px;
+        font-size: 10px;
+    }
+    /* About 01 */
+    /* Reduce Large Content Box */
+    .content-box-lg {
+        padding: 90px 0;
+    }
+    /* Vertical Heading */
+    .vertical-heading {
+        text-align: center;
+    }
+    /* Rotate Heading Back */
+    .vertical-heading h5 {
+        transform: rotate(0deg)    ;
+        -webkit-transform: rotate(0deg)    ;
+        -moz-transform: rotate(0deg)    ;
+        -ms-transform: rotate(0deg)    ;
+        -o-transform: rotate(0deg)    ;
+        display: block;
+        position: static;
+        margin-bottom: 15px;
+    }
+    .vertical-heading h2 {
+        font-size: 29px;
+        line-height: normal;
+        margin:0;
+    }  
+    #about-left {
+        margin-bottom: 50px;
+    }
+    #about-right {
+        text-align: center;
+    }
+    /* About 02 */
+    /* Reduce Medium Content Box */
+    .content-box-md {
+        padding: 80px 0;
+    }
+    .about-item {
+        padding: 55px 30px;
+        margin-bottom: 35px;
+    }
+    .about-item i {
+        font-size: 30px;
+    }
+    .about-item h3 {
+        font-size: 18px;
+    }
+    /* Team Section */
+    #team-left .vertical-heading {
+        min-height: 130px
+    }
+    /* Reduce Progress Bar Size */
+    .skill h4 {
+        font-size: 14px;
+        line-height: 35px;
+    }
+
+    #tech-statement h3{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    /* Services 01 */
+
+    /* Horizontal Heading */
+    .horizontal-heading {
+        /* reduce margin */
+        margin-bottom: 40px;
+    }
+    .horizontal-heading h2 {
+        font-size: 30px;
+    }
+    #services-01 img {
+        margin: 35px 0;
+    }
+    .service, .service .icon {
+        text-align: center;
+    }
+    .service h4 {
+        font-size: 18px;
+    }
+
+    /* Services 02, Same As Small Device */
+    .r-tabs-accordion-title{
+        text-align: center;
+        margin-bottom: 10px;
+
+    }
+    .r-tabs-accordion-title a {
+        font-family: "Raleway",sans-serif;
+        font-size: 13px;
+        color: #212226;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0;
+        /* Remove Underline */
+        text-decoration: none;
+    }
+    /* Tab Active State */
+    .r-tabs-accordion-title.r-tabs-state-active a{
+        color:#f4c613;
+        font-weight: 700;
+        border-bottom: 3px solid #f4c613;
+        padding-bottom: 5px;
+        transition: border-color 300ms linear;
+        -webkit-transition: border-color 300ms linear;
+        -moz-transition: border-color 300ms linear;
+        -ms-transition: border-color 300ms linear;
+        -o-transition: border-color 300ms linear;
+    }
+
+    #services-tabs .tab-bg {
+        /* text-align: center; */
+        padding: 40px 30px;
+    }
+    #services-tabs h2 {
+        font-size: 40px;
+    }
+    #services-tabs h3 {
+        font-size: 28px;
+    }
+    /* Portfolio Section */
+    #portfolio {
+        padding-bottom: 0;
+    }
+    #isotope-filters button {
+        padding-right: 15px;
+    }
+
+    /* Testimonials Section */
+    #testimonials {
+        padding-top: 45px;
+    }
+    #testimonial-slider {
+        top:0;
+    }
+    #testimonials .vertical-heading {
+        padding: 0;
+    }
+    .testimonial .row {
+        margin: 0;
+    }
+    .testimonial h3 {
+        font-size: 20px;
+    }
+    .testimonial .stars {
+        font-size: 16px;
+    }
+    .author img {
+        width: 80px !important;
+    }
+
+    /* Pricing Section */
+    .pricing-table {
+        margin-bottom: 30px;
+    }
+    .pricing-table .price h2 {
+        font-size: 28px;
+        margin: 0 0 0 16px;
+    }
+
+    /* Stats Section */
+    .stats-item {
+        margin-bottom: 20px;
+        padding: 25px 5px;
+    }
+    .stats-item i {
+        font-size: 30px;
+    }
+    .stats-item h3 {
+        font-size: 24px;
+    }
+
+    /* Blogs Section */
+    #blog-left {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .blog-post {
+        margin-bottom: 25px;
+    }
+
+    /* Contact Section */
+    #contact-left {
+        text-align: center;
+    }
+    .office {
+        margin-bottom: 40px;
+    }
+    ul.office-details li {
+        display: block;
+        margin-top: 25px;
+    }
+    ul.office-details li i {
+        width: auto;
+        display: block;
+        margin-bottom: 3px;
+    }
+    ul.social-list {
+        margin-bottom:  40px;
+    }
+}
+
+/* After Keep Reducing Screen Size, Found Small Error At 450px */
+/* Extra Small Devices (Portrait Phones & Smaller Devices) */
+@media (max-width: 480px) {
+    /* Home */
+    #home-heading h1 {
+        font-size: 18px;
+    }
+    #home-text p {
+        font-size: 11px;
+        line-height: 16px;
+        margin: 8px 10px 25px 10px;
+    }
+
+    /* Vertical Heading */
+    .vertical-heading h2 {
+        font-size: 22px;;
+    }
+
+    /* Portfolio */
+    #isotope-filters {
+        text-align: center;
+    }
+    #isotope-filters button {
+        font-size: 10px;
+        padding-right: 14px;
+    }
+
+    /* Testimonials */
+    .testimonial h3 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .testimonial .stars {
+        font-size: 13px;
+    }
+}
+
+/* After Keep Reducing Screen Size, Found Small Error At 300px */
+/* Extra Small Devices (Portrait Phones & Smaller Devices) */
+@media (max-width: 330px) {
+
+    /* Testimonials */
+    .testimonial h3 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .testimonial .stars {
+        font-size: 10px;
+    }
+}
