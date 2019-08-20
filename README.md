@@ -9,5 +9,5 @@
     * #### [COUNTER-UP JQUERY PLUGIN](https://ciromattia.github.io/jquery.counterup/demo/index.html) </br>
     * #### [jQuery Easing Plugin](http://gsgd.co.uk/sandbox/jquery/easing/#example) </br>  
  ---
-###  *Visit webpage: https://potaeko.github.io/Solo-Project-Frontend/*
+###  *[Visit webpage](https://potaeko.github.io/Solo-Project-Frontend/)*
 
