@@ -1,4 +1,3 @@
-###  *visit webpage: https://potaeko.github.io/Solo-Project-Frontend/*
 ## Solo Project Front-End Responsive Webpage was created with: 
 * #### HTML5 & CSS </br>
 * #### [Bootstrap](https://getbootstrap.com) 
@@ -8,5 +7,6 @@
     * #### [Responsive Tabs](https://jellekralt.github.io/Responsive-Tabs/) </br>
     * #### [Isotope](https://isotope.metafizzy.co/) </br>
     * #### [COUNTER-UP JQUERY PLUGIN](https://ciromattia.github.io/jquery.counterup/demo/index.html) </br>
-    * #### [jQuery Easing Plugin](http://gsgd.co.uk/sandbox/jquery/easing/#example) </br>
+    * #### [jQuery Easing Plugin](http://gsgd.co.uk/sandbox/jquery/easing/#example) </br>  
+###  *visit webpage: https://potaeko.github.io/Solo-Project-Frontend/*
 
