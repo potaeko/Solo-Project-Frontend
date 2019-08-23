@@ -1,5 +1,5 @@
 ## Solo Project Front-End Responsive Webpage was created with: 
-* #### HTML5 & CSS </br>
+* #### HTML & CSS </br>
 * #### [Bootstrap](https://getbootstrap.com) 
 * #### [jQuery](https://jquery.com) </br>
     * #### [owlcarousel](https://owlcarousel2.github.io/OwlCarousel2) </br>
